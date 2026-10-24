@@ -1,0 +1,17 @@
+# construction_defect.yaml
+
+path: /path/to/construction_defect_yolo
+train: images/train
+test: images/test
+val: images/val
+
+nc: 7
+
+names:
+  0: crack
+  1: damp-stain
+  2: efflorescence
+  3: leakagewaterstain
+  4: rebar-seg
+  5: roof-damage
+  6: spalling
