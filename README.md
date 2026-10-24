@@ -53,7 +53,7 @@ It should be noted that training time depends on the dataset size, and the value
 ## 3. Evaluation
 This is the evaluation of the complete YOLO+SAM framework.
 ```
-bash test_ap_on_yolov5_sam.sh
+bash eval_defect.sh
 ```
 These are the evaluation results on the construction defect dataset.
 
