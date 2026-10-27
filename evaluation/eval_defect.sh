@@ -2,8 +2,8 @@
 
 DATA_DIR="./data/construction_defect_yolo"
 
-YOLO_CKPT="pretrained_checkpoint/yolov5l_100epoch_4best.pt"
-SAM_CKPT="pretrained_checkpoint/sam_hq_vit_h_train.pth"
+YOLO_CKPT="pretrained_checkpoint/yolov5.pt"
+SAM_CKPT="pretrained_checkpoint/sam.pth"
 
 DEVICE="cuda:0"
 CONF_THRES=0.25
@@ -24,7 +24,7 @@ fi
 
 python eval_on_defect_yolov5_sam.py \
     --yolo_checkpoint "$YOLO_CKPT" \
-    --sam_hq_checkpoint "$SAM_CKPT" \
+    --sam_enhanced_checkpoint "$SAM_CKPT" \
     --anno_path "$ANNO_PATH" \
     --image_dir "$IMAGE_DIR" \
     --device "$DEVICE" \
